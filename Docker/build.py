@@ -384,7 +384,7 @@ def main(
         kwargs["build_arg"].append(f"{upper_key}={value}")
     #    kwargs["build_arg"] = " ".join(kwargs["build_arg"])
 
-    build_filename = fastsurfer_home / "BUILD.info"
+    build_filename = fastsurfer_home / "Docker/BUILD.info"
     with open(build_filename, "w") as build_file, \
             open(fastsurfer_home / "pyproject.toml") as project_file:
         ret_version = version("+git", project_file=project_file, file=build_file)
