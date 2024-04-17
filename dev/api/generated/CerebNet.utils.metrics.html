@@ -1,11 +1,11 @@
 <!doctype html>
-<html class="no-js" lang="en" data-content_root="">
+<html class="no-js" lang="en" data-content_root="../../">
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
     <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
 <link rel="index" title="Index" href="../../genindex.html" /><link rel="search" title="Search" href="../../search.html" /><link rel="next" title="CerebNet.utils.misc" href="CerebNet.utils.misc.html" /><link rel="prev" title="CerebNet.utils.meters" href="CerebNet.utils.meters.html" />
 
-    <!-- Generated with Sphinx 7.1.2 and Furo 2024.01.29 -->
+    <!-- Generated with Sphinx 7.3.5 and Furo 2024.01.29 -->
         <title>CerebNet.utils.metrics - FastSurfer</title>
       <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=a746c00c" />
     <link rel="stylesheet" type="text/css" href="../../_static/styles/furo.css?v=135e06be" />
@@ -307,10 +307,10 @@
         </div>
         <article role="main">
           <section id="module-CerebNet.utils.metrics">
-<span id="cerebnet-utils-metrics"></span><h1>CerebNet.utils.metrics<a class="headerlink" href="#module-CerebNet.utils.metrics" title="Permalink to this heading">#</a></h1>
+<span id="cerebnet-utils-metrics"></span><h1>CerebNet.utils.metrics<a class="headerlink" href="#module-CerebNet.utils.metrics" title="Link to this heading">¶</a></h1>
 <dl class="py class">
 <dt class="sig sig-object py" id="CerebNet.utils.metrics.DiceScore">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">CerebNet.utils.metrics.</span></span><span class="sig-name descname"><span class="pre">DiceScore</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">num_classes</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">class_ids=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">device=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">one_hot=False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">output_transform=&lt;function</span> <span class="pre">DiceScore.&lt;lambda&gt;&gt;</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/deep-mi/FastSurfer/blob/stable//CerebNet/utils/metrics.py#:~:text=DiceScore"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#CerebNet.utils.metrics.DiceScore" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">CerebNet.utils.metrics.</span></span><span class="sig-name descname"><span class="pre">DiceScore</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">num_classes</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">class_ids=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">device=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">one_hot=False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">output_transform=&lt;function</span> <span class="pre">DiceScore.&lt;lambda&gt;&gt;</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/deep-mi/FastSurfer/blob/stable//CerebNet/utils/metrics.py#:~:text=DiceScore"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#CerebNet.utils.metrics.DiceScore" title="Link to this definition">¶</a></dt>
 <dd><p>Accumulating the component of the dice coefficient i.e. the union and intersection.</p>
 <dl class="simple">
 <dt>Args:</dt><dd><dl class="simple">
@@ -345,19 +345,19 @@ initialized and available, device is set to <code class="xref py py-obj docutils
 </div>
 <dl class="py method">
 <dt class="sig sig-object py" id="CerebNet.utils.metrics.DiceScore.compute">
-<span class="sig-name descname"><span class="pre">compute</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">per_class</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">class_idxs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/deep-mi/FastSurfer/blob/stable//CerebNet/utils/metrics.py#:~:text=compute"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#CerebNet.utils.metrics.DiceScore.compute" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">compute</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">per_class</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">class_idxs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/deep-mi/FastSurfer/blob/stable//CerebNet/utils/metrics.py#:~:text=compute"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#CerebNet.utils.metrics.DiceScore.compute" title="Link to this definition">¶</a></dt>
 <dd><p>[MISSING].</p>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="CerebNet.utils.metrics.DiceScore.reset">
-<span class="sig-name descname"><span class="pre">reset</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/deep-mi/FastSurfer/blob/stable//CerebNet/utils/metrics.py#:~:text=reset"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#CerebNet.utils.metrics.DiceScore.reset" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">reset</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/deep-mi/FastSurfer/blob/stable//CerebNet/utils/metrics.py#:~:text=reset"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#CerebNet.utils.metrics.DiceScore.reset" title="Link to this definition">¶</a></dt>
 <dd><p>[MISSING].</p>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="CerebNet.utils.metrics.DiceScore.update">
-<span class="sig-name descname"><span class="pre">update</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">output</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/deep-mi/FastSurfer/blob/stable//CerebNet/utils/metrics.py#:~:text=update"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#CerebNet.utils.metrics.DiceScore.update" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">update</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">output</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/deep-mi/FastSurfer/blob/stable//CerebNet/utils/metrics.py#:~:text=update"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#CerebNet.utils.metrics.DiceScore.update" title="Link to this definition">¶</a></dt>
 <dd><p>Update the internal state based on the output.</p>
 <dl class="field-list">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -373,13 +373,13 @@ initialized and available, device is set to <code class="xref py py-obj docutils
 
 <dl class="py function">
 <dt class="sig sig-object py" id="CerebNet.utils.metrics.dice_score">
-<span class="sig-prename descclassname"><span class="pre">CerebNet.utils.metrics.</span></span><span class="sig-name descname"><span class="pre">dice_score</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pred</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">gt</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/deep-mi/FastSurfer/blob/stable//CerebNet/utils/metrics.py#:~:text=dice_score"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#CerebNet.utils.metrics.dice_score" title="Permalink to this definition">#</a></dt>
+<span class="sig-prename descclassname"><span class="pre">CerebNet.utils.metrics.</span></span><span class="sig-name descname"><span class="pre">dice_score</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pred</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">gt</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/deep-mi/FastSurfer/blob/stable//CerebNet/utils/metrics.py#:~:text=dice_score"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#CerebNet.utils.metrics.dice_score" title="Link to this definition">¶</a></dt>
 <dd><p>Calculates the Dice Similarity between pred and gt.</p>
 </dd></dl>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="CerebNet.utils.metrics.hd">
-<span class="sig-prename descclassname"><span class="pre">CerebNet.utils.metrics.</span></span><span class="sig-name descname"><span class="pre">hd</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">result</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">reference</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">voxelspacing</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">connectivity</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/deep-mi/FastSurfer/blob/stable//CerebNet/utils/metrics.py#:~:text=hd"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#CerebNet.utils.metrics.hd" title="Permalink to this definition">#</a></dt>
+<span class="sig-prename descclassname"><span class="pre">CerebNet.utils.metrics.</span></span><span class="sig-name descname"><span class="pre">hd</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">result</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">reference</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">voxelspacing</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">connectivity</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/deep-mi/FastSurfer/blob/stable//CerebNet/utils/metrics.py#:~:text=hd"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#CerebNet.utils.metrics.hd" title="Link to this definition">¶</a></dt>
 <dd><p>Computes the (symmetric) Hausdorff Distance (HD) between the binary objects in two
 images. It is defined as the maximum surface distance between the objects.</p>
 <dl class="field-list">
@@ -431,7 +431,7 @@ elements along each dimension, which is usually given in mm.</p>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="CerebNet.utils.metrics.hd95">
-<span class="sig-prename descclassname"><span class="pre">CerebNet.utils.metrics.</span></span><span class="sig-name descname"><span class="pre">hd95</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">result</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">reference</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">voxelspacing</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">connectivity</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/deep-mi/FastSurfer/blob/stable//CerebNet/utils/metrics.py#:~:text=hd95"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#CerebNet.utils.metrics.hd95" title="Permalink to this definition">#</a></dt>
+<span class="sig-prename descclassname"><span class="pre">CerebNet.utils.metrics.</span></span><span class="sig-name descname"><span class="pre">hd95</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">result</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">reference</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">voxelspacing</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">connectivity</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/deep-mi/FastSurfer/blob/stable//CerebNet/utils/metrics.py#:~:text=hd95"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#CerebNet.utils.metrics.hd95" title="Link to this definition">¶</a></dt>
 <dd><p>Computes the 95th percentile of the Hausdorff Distance.</p>
 <p>Computes the 95th percentile of the (symmetric) Hausdorff Distance (HD) between the binary objects in two
 images. Compared to the Hausdorff Distance, this metric is slightly more stable to small outliers and is
@@ -479,7 +479,7 @@ elements along each dimension, which is usually given in mm.</p>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="CerebNet.utils.metrics.volume_similarity">
-<span class="sig-prename descclassname"><span class="pre">CerebNet.utils.metrics.</span></span><span class="sig-name descname"><span class="pre">volume_similarity</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pred</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">gt</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/deep-mi/FastSurfer/blob/stable//CerebNet/utils/metrics.py#:~:text=volume_similarity"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#CerebNet.utils.metrics.volume_similarity" title="Permalink to this definition">#</a></dt>
+<span class="sig-prename descclassname"><span class="pre">CerebNet.utils.metrics.</span></span><span class="sig-name descname"><span class="pre">volume_similarity</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pred</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">gt</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/deep-mi/FastSurfer/blob/stable//CerebNet/utils/metrics.py#:~:text=volume_similarity"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#CerebNet.utils.metrics.volume_similarity" title="Link to this definition">¶</a></dt>
 <dd><p>Calculate the Volume Similarity between pred and gt.</p>
 </dd></dl>
 
@@ -568,9 +568,9 @@ elements along each dimension, which is usually given in mm.</p>
       
     </aside>
   </div>
-</div><script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js?v=b3ba4146"></script>
-    <script src="../../_static/doctools.js?v=888ff710"></script>
-    <script src="../../_static/sphinx_highlight.js?v=4825356b"></script>
+</div><script src="../../_static/documentation_options.js?v=5929fcd5"></script>
+    <script src="../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../../_static/scripts/furo.js?v=32e29ea5"></script>
     <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
     <script src="../../_static/copybutton.js?v=f281be69"></script>

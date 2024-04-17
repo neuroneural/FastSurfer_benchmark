@@ -1,11 +1,11 @@
 <!doctype html>
-<html class="no-js" lang="en" data-content_root="">
+<html class="no-js" lang="en" data-content_root="../../">
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
     <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
 <link rel="index" title="Index" href="../../genindex.html" /><link rel="search" title="Search" href="../../search.html" /><link rel="next" title="recon_surf.N4_bias_correct" href="recon_surf.N4_bias_correct.html" /><link rel="prev" title="recon_surf.lta" href="recon_surf.lta.html" />
 
-    <!-- Generated with Sphinx 7.1.2 and Furo 2024.01.29 -->
+    <!-- Generated with Sphinx 7.3.5 and Furo 2024.01.29 -->
         <title>recon_surf.map_surf_label - FastSurfer</title>
       <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=a746c00c" />
     <link rel="stylesheet" type="text/css" href="../../_static/styles/furo.css?v=135e06be" />
@@ -307,10 +307,10 @@
         </div>
         <article role="main">
           <section id="module-recon_surf.map_surf_label">
-<span id="recon-surf-map-surf-label"></span><h1>recon_surf.map_surf_label<a class="headerlink" href="#module-recon_surf.map_surf_label" title="Permalink to this heading">#</a></h1>
+<span id="recon-surf-map-surf-label"></span><h1>recon_surf.map_surf_label<a class="headerlink" href="#module-recon_surf.map_surf_label" title="Link to this heading">¶</a></h1>
 <dl class="py function">
 <dt class="sig sig-object py" id="recon_surf.map_surf_label.getSurfCorrespondence">
-<span class="sig-prename descclassname"><span class="pre">recon_surf.map_surf_label.</span></span><span class="sig-name descname"><span class="pre">getSurfCorrespondence</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">src_sphere</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">trg_sphere</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tree</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/deep-mi/FastSurfer/blob/stable//recon_surf/map_surf_label.py#:~:text=getSurfCorrespondence"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#recon_surf.map_surf_label.getSurfCorrespondence" title="Permalink to this definition">#</a></dt>
+<span class="sig-prename descclassname"><span class="pre">recon_surf.map_surf_label.</span></span><span class="sig-name descname"><span class="pre">getSurfCorrespondence</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">src_sphere</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">trg_sphere</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tree</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/deep-mi/FastSurfer/blob/stable//recon_surf/map_surf_label.py#:~:text=getSurfCorrespondence"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#recon_surf.map_surf_label.getSurfCorrespondence" title="Link to this definition">¶</a></dt>
 <dd><p>For each vertex in src_sphere find the closest vertex in trg_sphere.</p>
 <p>src_sphere and trg_sphere are Nx3 arrays of coordinates on the sphere
 (usually radius R=100 FS format). They also be a filenames of the corresponding
@@ -344,7 +344,7 @@ of target sphere.</p>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="recon_surf.map_surf_label.mapSurfLabel">
-<span class="sig-prename descclassname"><span class="pre">recon_surf.map_surf_label.</span></span><span class="sig-name descname"><span class="pre">mapSurfLabel</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">src_label_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">out_label_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">trg_surf</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">trg_sid</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rev_mapping</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/deep-mi/FastSurfer/blob/stable//recon_surf/map_surf_label.py#:~:text=mapSurfLabel"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#recon_surf.map_surf_label.mapSurfLabel" title="Permalink to this definition">#</a></dt>
+<span class="sig-prename descclassname"><span class="pre">recon_surf.map_surf_label.</span></span><span class="sig-name descname"><span class="pre">mapSurfLabel</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">src_label_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">out_label_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">trg_surf</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">trg_sid</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rev_mapping</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/deep-mi/FastSurfer/blob/stable//recon_surf/map_surf_label.py#:~:text=mapSurfLabel"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#recon_surf.map_surf_label.mapSurfLabel" title="Link to this definition">¶</a></dt>
 <dd><p>Map a label from src surface according to the correspondence.</p>
 <p>trg_surf is passed so that the label file will list the
 correct coordinates (usually the white surface), can be vetrices or filename.</p>
@@ -383,7 +383,7 @@ for each vertex on the trg surface.</p>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="recon_surf.map_surf_label.options_parse">
-<span class="sig-prename descclassname"><span class="pre">recon_surf.map_surf_label.</span></span><span class="sig-name descname"><span class="pre">options_parse</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/deep-mi/FastSurfer/blob/stable//recon_surf/map_surf_label.py#:~:text=options_parse"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#recon_surf.map_surf_label.options_parse" title="Permalink to this definition">#</a></dt>
+<span class="sig-prename descclassname"><span class="pre">recon_surf.map_surf_label.</span></span><span class="sig-name descname"><span class="pre">options_parse</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/deep-mi/FastSurfer/blob/stable//recon_surf/map_surf_label.py#:~:text=options_parse"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#recon_surf.map_surf_label.options_parse" title="Link to this definition">¶</a></dt>
 <dd><p>Create a command line interface and return command line options.</p>
 <dl class="field-list">
 <dt class="field-odd">Returns<span class="colon">:</span></dt>
@@ -397,7 +397,7 @@ for each vertex on the trg surface.</p>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="recon_surf.map_surf_label.writeSurfLabel">
-<span class="sig-prename descclassname"><span class="pre">recon_surf.map_surf_label.</span></span><span class="sig-name descname"><span class="pre">writeSurfLabel</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sid</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">label</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">values</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">surf</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/deep-mi/FastSurfer/blob/stable//recon_surf/map_surf_label.py#:~:text=writeSurfLabel"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#recon_surf.map_surf_label.writeSurfLabel" title="Permalink to this definition">#</a></dt>
+<span class="sig-prename descclassname"><span class="pre">recon_surf.map_surf_label.</span></span><span class="sig-name descname"><span class="pre">writeSurfLabel</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sid</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">label</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">values</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">surf</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/deep-mi/FastSurfer/blob/stable//recon_surf/map_surf_label.py#:~:text=writeSurfLabel"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#recon_surf.map_surf_label.writeSurfLabel" title="Link to this definition">¶</a></dt>
 <dd><p>Write a FS surface label file to filename (e.g. lh.labelname.label).</p>
 <p>Stores sid string in the header, then number of vertices
 and table of vertex index, RAS wm-surface coords (taken from surf)
@@ -505,9 +505,9 @@ and values (which can be zero).</p>
       
     </aside>
   </div>
-</div><script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js?v=b3ba4146"></script>
-    <script src="../../_static/doctools.js?v=888ff710"></script>
-    <script src="../../_static/sphinx_highlight.js?v=4825356b"></script>
+</div><script src="../../_static/documentation_options.js?v=5929fcd5"></script>
+    <script src="../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../../_static/scripts/furo.js?v=32e29ea5"></script>
     <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
     <script src="../../_static/copybutton.js?v=f281be69"></script>

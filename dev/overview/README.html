@@ -1,11 +1,11 @@
 <!doctype html>
-<html class="no-js" lang="en" data-content_root="">
+<html class="no-js" lang="en" data-content_root="../">
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
     <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
 <link rel="index" title="Index" href="../genindex.html" /><link rel="search" title="Search" href="../search.html" /><link rel="next" title="FastSurfer Flags" href="FLAGS.html" /><link rel="prev" title="Overview" href="index.html" />
 
-    <!-- Generated with Sphinx 7.1.2 and Furo 2024.01.29 -->
+    <!-- Generated with Sphinx 7.3.5 and Furo 2024.01.29 -->
         <title>Overview - FastSurfer</title>
       <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=a746c00c" />
     <link rel="stylesheet" type="text/css" href="../_static/styles/furo.css?v=135e06be" />
@@ -310,7 +310,7 @@
 <p><a class="reference external" href="https://colab.research.google.com/github/Deep-MI/FastSurfer/blob/stable/Tutorial/Tutorial_FastSurferCNN_QuickSeg.ipynb"><img alt="Open In Colab" src="https://colab.research.google.com/assets/colab-badge.svg" /></a>
 <a class="reference external" href="https://colab.research.google.com/github/Deep-MI/FastSurfer/blob/stable/Tutorial/Complete_FastSurfer_Tutorial.ipynb"><img alt="Open In Colab" src="https://colab.research.google.com/assets/colab-badge.svg" /></a></p>
 <section id="overview">
-<h1>Overview<a class="headerlink" href="#overview" title="Permalink to this heading">#</a></h1>
+<h1>Overview<a class="headerlink" href="#overview" title="Link to this heading">¶</a></h1>
 <p>This README contains all information needed to run FastSurfer - a fast and accurate deep-learning based neuroimaging pipeline. FastSurfer provides a fully compatible <a class="reference external" href="https://freesurfer.net/">FreeSurfer</a> alternative for volumetric analysis (within minutes) and surface-based thickness analysis (within only around 1h run time).
 FastSurfer is transitioning to sub-millimeter resolution support throughout the pipeline.</p>
 <p>The FastSurfer pipeline consists of two main parts for segmentation and surface reconstruction.</p>
@@ -320,7 +320,7 @@ FastSurfer is transitioning to sub-millimeter resolution support throughout the 
 </ul>
 </section>
 <section id="segmentation-modules">
-<h1>Segmentation Modules<a class="headerlink" href="#segmentation-modules" title="Permalink to this heading">#</a></h1>
+<h1>Segmentation Modules<a class="headerlink" href="#segmentation-modules" title="Link to this heading">¶</a></h1>
 <ul class="simple">
 <li><p>approximately 5 minutes (GPU), <code class="docutils literal notranslate"><span class="pre">--seg_only</span></code> only runs this part</p></li>
 <li><p>Modules (all by default):</p>
@@ -344,23 +344,23 @@ FastSurfer is transitioning to sub-millimeter resolution support throughout the 
 </ul>
 </section>
 <section id="surface-reconstruction">
-<h1>Surface reconstruction<a class="headerlink" href="#surface-reconstruction" title="Permalink to this heading">#</a></h1>
+<h1>Surface reconstruction<a class="headerlink" href="#surface-reconstruction" title="Link to this heading">¶</a></h1>
 <ul class="simple">
 <li><p>approximately 60-90 minutes, <code class="docutils literal notranslate"><span class="pre">--surf_only</span></code> runs only the surface part</p></li>
 <li><p>supports high-resolution images (up to 0.7mm, experimental beyond that)</p></li>
 </ul>
 </section>
 <section id="requirements-to-input-images">
-<h1>Requirements to input images<a class="headerlink" href="#requirements-to-input-images" title="Permalink to this heading">#</a></h1>
+<h1>Requirements to input images<a class="headerlink" href="#requirements-to-input-images" title="Link to this heading">¶</a></h1>
 <p>All pipeline parts and modules require good quality MRI images, preferably from a 3T MR scanner.
 FastSurfer expects a similar image quality as FreeSurfer, so what works with FreeSurfer should also work with FastSurfer.
 Notwithstanding module-specific limitations, resolution should be between 1mm and 0.7mm isotropic (slice thickness should not exceed 1.5mm). Preferred sequence is Siemens MPRAGE or multi-echo MPRAGE. GE SPGR should also work. See <code class="docutils literal notranslate"><span class="pre">--vox_size</span></code> flag for high-res behaviour.</p>
 <p><img alt="" src="../_images/teaser.png" /></p>
 </section>
 <section id="getting-started">
-<h1>Getting started<a class="headerlink" href="#getting-started" title="Permalink to this heading">#</a></h1>
+<h1>Getting started<a class="headerlink" href="#getting-started" title="Link to this heading">¶</a></h1>
 <section id="installation">
-<h2>Installation<a class="headerlink" href="#installation" title="Permalink to this heading">#</a></h2>
+<h2>Installation<a class="headerlink" href="#installation" title="Link to this heading">¶</a></h2>
 <p>There are two ways to run FastSurfer (links are to installation instructions):</p>
 <ol class="arabic simple">
 <li><p>In a container (<a class="reference internal" href="INSTALL.html#singularity"><span class="std std-ref">Singularity</span></a> or <a class="reference internal" href="INSTALL.html#docker"><span class="std std-ref">Docker</span></a>) (OS: <a class="reference internal" href="INSTALL.html#linux"><span class="std std-ref">Linux</span></a>, <a class="reference internal" href="INSTALL.html#windows"><span class="std std-ref">Windows</span></a>, <a class="reference internal" href="INSTALL.html#docker--currently-only-supported-for-intel-cpus-"><span class="std std-ref">MacOS on Intel</span></a>),</p></li>
@@ -369,7 +369,7 @@ Notwithstanding module-specific limitations, resolution should be between 1mm an
 <p>We recommended you use Singularity or Docker, especially if either is already installed on your system, because the images we provide on <a class="reference external" href="https://hub.docker.com/r/deepmi/fastsurfer">DockerHub</a> conveniently include everything needed for FastSurfer, expect a <a class="reference external" href="https://surfer.nmr.mgh.harvard.edu/fswiki/License">FreeSurfer license file</a>. We have detailed, per-OS Installation instructions in the <a class="reference internal" href="INSTALL.html"><span class="std std-doc">INSTALL.md file</span></a>.</p>
 </section>
 <section id="usage">
-<h2>Usage<a class="headerlink" href="#usage" title="Permalink to this heading">#</a></h2>
+<h2>Usage<a class="headerlink" href="#usage" title="Link to this heading">¶</a></h2>
 <p>All installation methods use the <code class="docutils literal notranslate"><span class="pre">run_fastsurfer.sh</span></code> call interface (replace <code class="docutils literal notranslate"><span class="pre">*fastsurfer-flags*</span></code> with <a class="reference internal" href="FLAGS.html#required-arguments"><span class="std std-ref">FastSurfer Flag</span></a>, which is the general starting point for FastSurfer. However, there are different ways to call this script depending on the installation, which we explain here:</p>
 <ol class="arabic">
 <li><p>For container installations, you need to define the hardware and mount the folders with the input (<code class="docutils literal notranslate"><span class="pre">/data</span></code>) and output data (<code class="docutils literal notranslate"><span class="pre">/output</span></code>):<br />
@@ -408,11 +408,11 @@ Notwithstanding module-specific limitations, resolution should be between 1mm an
 </li>
 </ol>
 <section id="fastsurfer-flags">
-<h3>FastSurfer_Flags<a class="headerlink" href="#fastsurfer-flags" title="Permalink to this heading">#</a></h3>
+<h3>FastSurfer_Flags<a class="headerlink" href="#fastsurfer-flags" title="Link to this heading">¶</a></h3>
 <p>Please refer to <a class="reference internal" href="FLAGS.html"><span class="std std-doc">FASTSURFER_FLAGS</span></a>.</p>
 </section>
 <section id="examples">
-<h3>Examples<a class="headerlink" href="#examples" title="Permalink to this heading">#</a></h3>
+<h3>Examples<a class="headerlink" href="#examples" title="Link to this heading">¶</a></h3>
 <p>All the examples can be found here: <a class="reference internal" href="EXAMPLES.html"><span class="std std-doc">FASTSURFER_EXAMPLES</span></a></p>
 <ul class="simple">
 <li><p><a class="reference internal" href="EXAMPLES.html#example-1-fastsurfer-docker"><span class="std std-ref">Example 1: FastSurfer Docker</span></a></p></li>
@@ -425,7 +425,7 @@ Notwithstanding module-specific limitations, resolution should be between 1mm an
 </section>
 </section>
 <section id="output-files">
-<h2>Output files<a class="headerlink" href="#output-files" title="Permalink to this heading">#</a></h2>
+<h2>Output files<a class="headerlink" href="#output-files" title="Link to this heading">¶</a></h2>
 <p>Modules output can be found here: <a class="reference internal" href="OUTPUT_FILES.html"><span class="std std-doc">FastSurfer_Output_Files</span></a></p>
 <ul class="simple">
 <li><p><a class="reference internal" href="OUTPUT_FILES.html#segmentation-module"><span class="std std-ref">Segmentation module</span></a></p></li>
@@ -434,12 +434,12 @@ Notwithstanding module-specific limitations, resolution should be between 1mm an
 </ul>
 </section>
 <section id="system-requirements">
-<h2>System Requirements<a class="headerlink" href="#system-requirements" title="Permalink to this heading">#</a></h2>
+<h2>System Requirements<a class="headerlink" href="#system-requirements" title="Link to this heading">¶</a></h2>
 <p>Recommendation: At least 8 GB system memory and 8 GB NVIDIA graphics memory <code class="docutils literal notranslate"><span class="pre">--viewagg_device</span> <span class="pre">gpu</span></code></p>
 <p>Minimum: 7 GB system memory and 2 GB graphics memory <code class="docutils literal notranslate"><span class="pre">--viewagg_device</span> <span class="pre">cpu</span> <span class="pre">--vox_size</span> <span class="pre">1</span></code></p>
 <p>Minimum CPU-only: 8 GB system memory (much slower, not recommended) <code class="docutils literal notranslate"><span class="pre">--device</span> <span class="pre">cpu</span> <span class="pre">--vox_size</span> <span class="pre">1</span></code></p>
 <section id="minimum-requirements">
-<h3>Minimum Requirements:<a class="headerlink" href="#minimum-requirements" title="Permalink to this heading">#</a></h3>
+<h3>Minimum Requirements:<a class="headerlink" href="#minimum-requirements" title="Link to this heading">¶</a></h3>
 <div class="table-wrapper colwidths-auto docutils container">
 <table class="docutils align-default">
 <thead>
@@ -486,21 +486,21 @@ Notwithstanding module-specific limitations, resolution should be between 1mm an
 </section>
 </section>
 <section id="expert-usage">
-<h2>Expert usage<a class="headerlink" href="#expert-usage" title="Permalink to this heading">#</a></h2>
+<h2>Expert usage<a class="headerlink" href="#expert-usage" title="Link to this heading">¶</a></h2>
 <p>Individual modules and the surface pipeline can be run independently of the full pipeline script documented in this README.
 This is documented in READMEs in subfolders, for example: <span class="xref myst">whole brain segmentation only with FastSurferVINN</span>, <a class="reference internal" href="#../../CerebNet/README.md"><span class="xref myst">cerebellum sub-segmentation (in progress)</span></a> and <span class="xref myst">surface pipeline only (recon-surf)</span>.</p>
 <p>Specifically, the segmentation modules feature options for optimized parallelization of batch processing.</p>
 </section>
 <section id="freesurfer-downstream-modules">
-<h2>FreeSurfer Downstream Modules<a class="headerlink" href="#freesurfer-downstream-modules" title="Permalink to this heading">#</a></h2>
+<h2>FreeSurfer Downstream Modules<a class="headerlink" href="#freesurfer-downstream-modules" title="Link to this heading">¶</a></h2>
 <p>FreeSurfer provides several Add-on modules for downstream processing, such as subfield segmentation ( <a class="reference external" href="https://surfer.nmr.mgh.harvard.edu/fswiki/HippocampalSubfieldsAndNucleiOfAmygdala">hippocampus/amygdala</a>, <a class="reference external" href="https://surfer.nmr.mgh.harvard.edu/fswiki/BrainstemSubstructures">brainstrem</a>, <a class="reference external" href="https://freesurfer.net/fswiki/ThalamicNuclei">thalamus</a> and <a class="reference external" href="https://surfer.nmr.mgh.harvard.edu/fswiki/HypothalamicSubunits">hypothalamus</a> ) as well as <a class="reference external" href="https://surfer.nmr.mgh.harvard.edu/fswiki/Tracula">TRACULA</a>. We now provide symlinks to the required files, as FastSurfer creates them with a different name (e.g. using “mapped” or “DKT” to make clear that these file are from our segmentation using the DKT Atlas protocol, and mapped to the surface). Most subfield segmentations require <code class="docutils literal notranslate"><span class="pre">wmparc.mgz</span></code> and work very well with FastSurfer,  so feel free to run those pipelines after FastSurfer. TRACULA requires <code class="docutils literal notranslate"><span class="pre">aparc+aseg.mgz</span></code> which we now link, but have not tested if it works, given that <a class="reference external" href="https://mindboggle.readthedocs.io/en/latest/labels.html">DKT-atlas</a> merged a few labels. You should source FreeSurfer 7.3.2 to run these modules.</p>
 </section>
 <section id="intended-use">
-<h2>Intended Use<a class="headerlink" href="#intended-use" title="Permalink to this heading">#</a></h2>
+<h2>Intended Use<a class="headerlink" href="#intended-use" title="Link to this heading">¶</a></h2>
 <p>This software can be used to compute statistics from an MR image for research purposes. Estimates can be used to aggregate population data, compare groups etc. The data should not be used for clinical decision support in individual cases and, therefore, does not benefit the individual patient. Be aware that for a single image, produced results may be unreliable (e.g. due to head motion, imaging artefacts, processing errors etc). We always recommend to perform visual quality checks on your data, as also your MR-sequence may differ from the ones that we tested. No contributor shall be liable to any damages, see also our software <a class="reference download internal" download="" href="../_downloads/3b423627fe21976c3c06e60f78e14ae1/LICENSE"><span class="xref download myst">LICENSE</span></a>.</p>
 </section>
 <section id="references">
-<h2>References<a class="headerlink" href="#references" title="Permalink to this heading">#</a></h2>
+<h2>References<a class="headerlink" href="#references" title="Link to this heading">¶</a></h2>
 <p>If you use this for research publications, please cite:</p>
 <p><em>Henschel L, Conjeti S, Estrada S, Diers K, Fischl B, Reuter M, FastSurfer - A fast and accurate deep learning based neuroimaging pipeline, NeuroImage 219 (2020), 117012. https://doi.org/10.1016/j.neuroimage.2020.117012</em></p>
 <p><em>Henschel L*, Kuegler D*, Reuter M. (*co-first). FastSurferVINN: Building Resolution-Independence into Deep Learning Segmentation Methods - A Solution for HighRes Brain MRI. NeuroImage 251 (2022), 118933. http://dx.doi.org/10.1016/j.neuroimage.2022.118933</em></p>
@@ -508,7 +508,7 @@ This is documented in READMEs in subfolders, for example: <span class="xref myst
 <p>Stay tuned for updates and follow us on Twitter: https://twitter.com/deepmilab</p>
 </section>
 <section id="acknowledgements">
-<h2>Acknowledgements<a class="headerlink" href="#acknowledgements" title="Permalink to this heading">#</a></h2>
+<h2>Acknowledgements<a class="headerlink" href="#acknowledgements" title="Link to this heading">¶</a></h2>
 <p>This project is partially funded by:</p>
 <ul class="simple">
 <li><p><a class="reference external" href="https://chanzuckerberg.com/eoss/proposals/fastsurfer-ai-based-neuroimage-analysis-package/">Chan Zuckerberg Initiative</a></p></li>
@@ -574,9 +574,9 @@ https://surfer.nmr.mgh.harvard.edu/fswiki/FreeSurferMethodsCitation</p>
       
     </aside>
   </div>
-</div><script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js?v=b3ba4146"></script>
-    <script src="../_static/doctools.js?v=888ff710"></script>
-    <script src="../_static/sphinx_highlight.js?v=4825356b"></script>
+</div><script src="../_static/documentation_options.js?v=5929fcd5"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../_static/scripts/furo.js?v=32e29ea5"></script>
     <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
     <script src="../_static/copybutton.js?v=f281be69"></script>

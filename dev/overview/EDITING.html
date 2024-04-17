@@ -1,11 +1,11 @@
 <!doctype html>
-<html class="no-js" lang="en" data-content_root="">
+<html class="no-js" lang="en" data-content_root="../">
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
     <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
 <link rel="index" title="Index" href="../genindex.html" /><link rel="search" title="Search" href="../search.html" /><link rel="next" title="Security Policy" href="SECURITY.html" /><link rel="prev" title="Installation" href="INSTALL.html" />
 
-    <!-- Generated with Sphinx 7.1.2 and Furo 2024.01.29 -->
+    <!-- Generated with Sphinx 7.3.5 and Furo 2024.01.29 -->
         <title>Manual Edits - FastSurfer</title>
       <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=a746c00c" />
     <link rel="stylesheet" type="text/css" href="../_static/styles/furo.css?v=135e06be" />
@@ -307,9 +307,9 @@
         </div>
         <article role="main">
           <section id="manual-edits">
-<h1>Manual Edits<a class="headerlink" href="#manual-edits" title="Permalink to this heading">#</a></h1>
+<h1>Manual Edits<a class="headerlink" href="#manual-edits" title="Link to this heading">¶</a></h1>
 <section id="pipeline">
-<h2>Pipeline<a class="headerlink" href="#pipeline" title="Permalink to this heading">#</a></h2>
+<h2>Pipeline<a class="headerlink" href="#pipeline" title="Link to this heading">¶</a></h2>
 <p>FreeSurfer allows the user to perform manual edits at various places in their pipeline.
 A few of these can currently also be done in FastSurfer and we plan to add more in the future.
 However, we have noticed that much less editing is necessary as the neural net segmentation is
@@ -339,14 +339,14 @@ processing steps is different in FastSurfer:</p>
 </ol>
 </section>
 <section id="possible-edits">
-<h2>Possible Edits<a class="headerlink" href="#possible-edits" title="Permalink to this heading">#</a></h2>
+<h2>Possible Edits<a class="headerlink" href="#possible-edits" title="Link to this heading">¶</a></h2>
 <p>Currently there is no way to interact with the surface module (stopping and resuming it).
 Therefore, some typical FreeSurfer edits (such as brain finalsurfs) are not available.
 Other edits (e.g. placement of WM control points) are not meaningful, as the segmentation is done differently with our neural network in the <em>asegdkt module</em>.</p>
 <p>Therefore, currently three types of edits are possible:</p>
 </section>
 <section id="t1-pre-processing">
-<h2>1. T1 Pre-Processing:<a class="headerlink" href="#t1-pre-processing" title="Permalink to this heading">#</a></h2>
+<h2>1. T1 Pre-Processing:<a class="headerlink" href="#t1-pre-processing" title="Link to this heading">¶</a></h2>
 <p>Instead of using the original scan as input, you can perform a bias field correction as a pre-processing step. This can also be achieved by running the <em>asegdkt module</em> twice (using different subject ids). The second time you input the bias field corrected image <code class="docutils literal notranslate"><span class="pre">orig_nu.mgz</span></code>
 that was provided from the first run. This can help brighten up some regions and improve segmentation quality for some difficult cases.</p>
 <ul>
@@ -383,7 +383,7 @@ that was provided from the first run. This can help brighten up some regions and
 </ul>
 </section>
 <section id="segmentation-edits">
-<h2>2. Segmentation Edits<a class="headerlink" href="#segmentation-edits" title="Permalink to this heading">#</a></h2>
+<h2>2. Segmentation Edits<a class="headerlink" href="#segmentation-edits" title="Link to this heading">¶</a></h2>
 <p>You can manually edit <code class="docutils literal notranslate"><span class="pre">aparc.DKTatlas+aseg.deep.mgz</span></code>. This is similar to aseg edits in FreeSurfer. You can fill-in undersegmented regions (with the correct segmentation ID). To re-create the aseg and mask run the following command before continuing with other modules:</p>
 <ul>
 <li><p>Step 1: Assuming that you have run the full fastsurfer pipeline once as described in method_1 and succesfully produced segmentations and surfaces</p></li>
@@ -419,7 +419,7 @@ that was provided from the first run. This can help brighten up some regions and
 </ul>
 </section>
 <section id="brainmask-edits">
-<h2>3. Brainmask Edits:<a class="headerlink" href="#brainmask-edits" title="Permalink to this heading">#</a></h2>
+<h2>3. Brainmask Edits:<a class="headerlink" href="#brainmask-edits" title="Link to this heading">¶</a></h2>
 <p>When surfaces go out too far, e.g. they grab dura, you can tighten the mask directly, just edit <code class="docutils literal notranslate"><span class="pre">mask.mgz</span></code>and start the <em>surface module</em>.</p>
 <ul>
 <li><p>Step 1: Assuming that you have run the full fastsurfer pipeline once as described in method_1 and succesfully produced segmentations and surfaces</p></li>
@@ -527,9 +527,9 @@ Thanks for using FastSurfer.</p>
       
     </aside>
   </div>
-</div><script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js?v=b3ba4146"></script>
-    <script src="../_static/doctools.js?v=888ff710"></script>
-    <script src="../_static/sphinx_highlight.js?v=4825356b"></script>
+</div><script src="../_static/documentation_options.js?v=5929fcd5"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../_static/scripts/furo.js?v=32e29ea5"></script>
     <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
     <script src="../_static/copybutton.js?v=f281be69"></script>

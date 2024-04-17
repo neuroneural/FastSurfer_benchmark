@@ -1,11 +1,11 @@
 <!doctype html>
-<html class="no-js" lang="en" data-content_root="">
+<html class="no-js" lang="en" data-content_root="../">
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
     <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
 <link rel="index" title="Index" href="../genindex.html" /><link rel="search" title="Search" href="../search.html" /><link rel="next" title="Examples" href="EXAMPLES.html" /><link rel="prev" title="Overview" href="README.html" />
 
-    <!-- Generated with Sphinx 7.1.2 and Furo 2024.01.29 -->
+    <!-- Generated with Sphinx 7.3.5 and Furo 2024.01.29 -->
         <title>FastSurfer Flags - FastSurfer</title>
       <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=a746c00c" />
     <link rel="stylesheet" type="text/css" href="../_static/styles/furo.css?v=135e06be" />
@@ -307,7 +307,7 @@
         </div>
         <article role="main">
           <section id="fastsurfer-flags">
-<h1>FastSurfer Flags<a class="headerlink" href="#fastsurfer-flags" title="Permalink to this heading">#</a></h1>
+<h1>FastSurfer Flags<a class="headerlink" href="#fastsurfer-flags" title="Link to this heading">¶</a></h1>
 <p>Next, you will need to select the <code class="docutils literal notranslate"><span class="pre">*fastsurfer-flags*</span></code> and replace <code class="docutils literal notranslate"><span class="pre">*fastsurfer-flags*</span></code> with your options. Please see the Examples below for some example flags.</p>
 <p>The <code class="docutils literal notranslate"><span class="pre">*fastsurfer-flags*</span></code> will usually include the subject directory (<code class="docutils literal notranslate"><span class="pre">--sd</span></code>; Note, this will be the mounted path - <code class="docutils literal notranslate"><span class="pre">/output</span></code> - for containers), the subject name/id (<code class="docutils literal notranslate"><span class="pre">--sid</span></code>) and the path to the input image (<code class="docutils literal notranslate"><span class="pre">--t1</span></code>). For example:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>...<span class="w"> </span>--sd<span class="w"> </span>/output<span class="w"> </span>--sid<span class="w"> </span>test_subject<span class="w"> </span>--t1<span class="w"> </span>/data/test_subject_t1.nii.gz<span class="w"> </span>--3T
@@ -320,7 +320,7 @@ Here, we have also added the <code class="docutils literal notranslate"><span cl
 </pre></div>
 </div>
 <section id="required-arguments">
-<h2>Required arguments<a class="headerlink" href="#required-arguments" title="Permalink to this heading">#</a></h2>
+<h2>Required arguments<a class="headerlink" href="#required-arguments" title="Link to this heading">¶</a></h2>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">--sd</span></code>: Output directory $SUBJECTS_DIR (equivalent to FreeSurfer setup –&gt; $SUBJECTS_DIR/sid/mri; $SUBJECTS_DIR/sid/surf … will be created).</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">--sid</span></code>: Subject ID for directory inside $SUBJECTS_DIR to be created ($SUBJECTS_DIR/sid/…)</p></li>
@@ -328,13 +328,13 @@ Here, we have also added the <code class="docutils literal notranslate"><span cl
 </ul>
 </section>
 <section id="required-for-docker-when-running-surface-module">
-<h2>Required for docker when running surface module<a class="headerlink" href="#required-for-docker-when-running-surface-module" title="Permalink to this heading">#</a></h2>
+<h2>Required for docker when running surface module<a class="headerlink" href="#required-for-docker-when-running-surface-module" title="Link to this heading">¶</a></h2>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">--fs_license</span></code>: Path to FreeSurfer license key file (only needed for the surface module). Register (for free) at https://surfer.nmr.mgh.harvard.edu/registration.html to obtain it if you do not have FreeSurfer installed so far. Strictly necessary if you use Docker, optional for local install (your local FreeSurfer license will automatically be used). The license file is usually located in $FREESURFER_HOME/license.txt or $FREESURFER_HOME/.license .</p></li>
 </ul>
 </section>
 <section id="segmentation-pipeline-arguments-optional">
-<h2>Segmentation pipeline arguments (optional)<a class="headerlink" href="#segmentation-pipeline-arguments-optional" title="Permalink to this heading">#</a></h2>
+<h2>Segmentation pipeline arguments (optional)<a class="headerlink" href="#segmentation-pipeline-arguments-optional" title="Link to this heading">¶</a></h2>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">--seg_only</span></code>: only run FastSurferCNN (generate segmentation, do not run the surface pipeline)</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">--seg_log</span></code>: Name and location for the log-file for the segmentation (FastSurferCNN). Default: $SUBJECTS_DIR/$sid/scripts/deep-seg.log</p></li>
@@ -347,7 +347,7 @@ Here, we have also added the <code class="docutils literal notranslate"><span cl
 </ul>
 </section>
 <section id="surface-pipeline-arguments-optional">
-<h2>Surface pipeline arguments (optional)<a class="headerlink" href="#surface-pipeline-arguments-optional" title="Permalink to this heading">#</a></h2>
+<h2>Surface pipeline arguments (optional)<a class="headerlink" href="#surface-pipeline-arguments-optional" title="Link to this heading">¶</a></h2>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">--surf_only</span></code>: only run the surface pipeline recon_surf. The segmentation created by FastSurferCNN must already exist in this case.</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">--3T</span></code>: for Talairach registration, use the 3T atlas instead of the 1.5T atlas (which is used if the flag is not provided). This gives better (more consistent with FreeSurfer) ICV estimates (eTIV) for 3T and better Talairach registration matrices, but has little impact on standard volume or surface stats.</p></li>
@@ -360,7 +360,7 @@ Here, we have also added the <code class="docutils literal notranslate"><span cl
 </ul>
 </section>
 <section id="other">
-<h2>Other<a class="headerlink" href="#other" title="Permalink to this heading">#</a></h2>
+<h2>Other<a class="headerlink" href="#other" title="Link to this heading">¶</a></h2>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">--threads</span></code>: Target number of threads for all modules (segmentation, surface pipeline), <code class="docutils literal notranslate"><span class="pre">1</span></code> (default) forces FastSurfer to only really use one core. Note, that the default value may change in the future for better performance on multi-core architectures.</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">--vox_size</span></code>: Forces processing at a specific voxel size. If a number between 0.7 and 1 is specified (below is experimental) the T1w image is conformed to that isotropic voxel size and processed.
@@ -454,9 +454,9 @@ The voxel size (whether set manually or derived) determines whether the surfaces
       
     </aside>
   </div>
-</div><script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js?v=b3ba4146"></script>
-    <script src="../_static/doctools.js?v=888ff710"></script>
-    <script src="../_static/sphinx_highlight.js?v=4825356b"></script>
+</div><script src="../_static/documentation_options.js?v=5929fcd5"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../_static/scripts/furo.js?v=32e29ea5"></script>
     <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
     <script src="../_static/copybutton.js?v=f281be69"></script>

@@ -1,11 +1,11 @@
 <!doctype html>
-<html class="no-js" lang="en" data-content_root="">
+<html class="no-js" lang="en" data-content_root="../../">
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
     <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
 <link rel="index" title="Index" href="../../genindex.html" /><link rel="search" title="Search" href="../../search.html" /><link rel="next" title="FastSurferCNN.quick_qc" href="FastSurferCNN.quick_qc.html" /><link rel="prev" title="FastSurferCNN.generate_hdf5" href="FastSurferCNN.generate_hdf5.html" />
 
-    <!-- Generated with Sphinx 7.1.2 and Furo 2024.01.29 -->
+    <!-- Generated with Sphinx 7.3.5 and Furo 2024.01.29 -->
         <title>FastSurferCNN.inference - FastSurfer</title>
       <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=a746c00c" />
     <link rel="stylesheet" type="text/css" href="../../_static/styles/furo.css?v=135e06be" />
@@ -307,10 +307,10 @@
         </div>
         <article role="main">
           <section id="module-FastSurferCNN.inference">
-<span id="fastsurfercnn-inference"></span><h1>FastSurferCNN.inference<a class="headerlink" href="#module-FastSurferCNN.inference" title="Permalink to this heading">#</a></h1>
+<span id="fastsurfercnn-inference"></span><h1>FastSurferCNN.inference<a class="headerlink" href="#module-FastSurferCNN.inference" title="Link to this heading">¶</a></h1>
 <dl class="py class">
 <dt class="sig sig-object py" id="FastSurferCNN.inference.Inference">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">FastSurferCNN.inference.</span></span><span class="sig-name descname"><span class="pre">Inference</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cfg</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">device</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ckpt</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lut</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/deep-mi/FastSurfer/blob/stable//FastSurferCNN/inference.py#:~:text=Inference"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#FastSurferCNN.inference.Inference" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">FastSurferCNN.inference.</span></span><span class="sig-name descname"><span class="pre">Inference</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cfg</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">device</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ckpt</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lut</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/deep-mi/FastSurfer/blob/stable//FastSurferCNN/inference.py#:~:text=Inference"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#FastSurferCNN.inference.Inference" title="Link to this definition">¶</a></dt>
 <dd><p>Model evaluation class to run inference using FastSurferCNN.</p>
 <p class="rubric">Attributes</p>
 <div class="table-wrapper docutils container">
@@ -373,7 +373,7 @@
 </div>
 <dl class="py method">
 <dt class="sig sig-object py" id="FastSurferCNN.inference.Inference.eval">
-<span class="sig-name descname"><span class="pre">eval</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">init_pred</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">val_loader</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">out_scale</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">out</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/deep-mi/FastSurfer/blob/stable//FastSurferCNN/inference.py#:~:text=eval"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#FastSurferCNN.inference.Inference.eval" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">eval</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">init_pred</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">val_loader</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">out_scale</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">out</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/deep-mi/FastSurfer/blob/stable//FastSurferCNN/inference.py#:~:text=eval"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#FastSurferCNN.inference.Inference.eval" title="Link to this definition">¶</a></dt>
 <dd><p>Perform prediction and inplace-aggregate views into pred_prob.</p>
 <dl class="field-list">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -399,7 +399,7 @@
 
 <dl class="py method">
 <dt class="sig sig-object py" id="FastSurferCNN.inference.Inference.get_cfg">
-<span class="sig-name descname"><span class="pre">get_cfg</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/deep-mi/FastSurfer/blob/stable//FastSurferCNN/inference.py#:~:text=get_cfg"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#FastSurferCNN.inference.Inference.get_cfg" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">get_cfg</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/deep-mi/FastSurfer/blob/stable//FastSurferCNN/inference.py#:~:text=get_cfg"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#FastSurferCNN.inference.Inference.get_cfg" title="Link to this definition">¶</a></dt>
 <dd><p>Return the configurations.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns<span class="colon">:</span></dt>
@@ -413,7 +413,7 @@
 
 <dl class="py method">
 <dt class="sig sig-object py" id="FastSurferCNN.inference.Inference.get_device">
-<span class="sig-name descname"><span class="pre">get_device</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/deep-mi/FastSurfer/blob/stable//FastSurferCNN/inference.py#:~:text=get_device"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#FastSurferCNN.inference.Inference.get_device" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">get_device</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/deep-mi/FastSurfer/blob/stable//FastSurferCNN/inference.py#:~:text=get_device"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#FastSurferCNN.inference.Inference.get_device" title="Link to this definition">¶</a></dt>
 <dd><p>Return the device.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns<span class="colon">:</span></dt>
@@ -427,7 +427,7 @@
 
 <dl class="py method">
 <dt class="sig sig-object py" id="FastSurferCNN.inference.Inference.get_max_size">
-<span class="sig-name descname"><span class="pre">get_max_size</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/deep-mi/FastSurfer/blob/stable//FastSurferCNN/inference.py#:~:text=get_max_size"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#FastSurferCNN.inference.Inference.get_max_size" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">get_max_size</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/deep-mi/FastSurfer/blob/stable//FastSurferCNN/inference.py#:~:text=get_max_size"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#FastSurferCNN.inference.Inference.get_max_size" title="Link to this definition">¶</a></dt>
 <dd><p>Return the max size.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns<span class="colon">:</span></dt>
@@ -441,7 +441,7 @@
 
 <dl class="py method">
 <dt class="sig sig-object py" id="FastSurferCNN.inference.Inference.get_model_height">
-<span class="sig-name descname"><span class="pre">get_model_height</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/deep-mi/FastSurfer/blob/stable//FastSurferCNN/inference.py#:~:text=get_model_height"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#FastSurferCNN.inference.Inference.get_model_height" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">get_model_height</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/deep-mi/FastSurfer/blob/stable//FastSurferCNN/inference.py#:~:text=get_model_height"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#FastSurferCNN.inference.Inference.get_model_height" title="Link to this definition">¶</a></dt>
 <dd><p>Return the model height.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns<span class="colon">:</span></dt>
@@ -455,7 +455,7 @@
 
 <dl class="py method">
 <dt class="sig sig-object py" id="FastSurferCNN.inference.Inference.get_model_width">
-<span class="sig-name descname"><span class="pre">get_model_width</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/deep-mi/FastSurfer/blob/stable//FastSurferCNN/inference.py#:~:text=get_model_width"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#FastSurferCNN.inference.Inference.get_model_width" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">get_model_width</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/deep-mi/FastSurfer/blob/stable//FastSurferCNN/inference.py#:~:text=get_model_width"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#FastSurferCNN.inference.Inference.get_model_width" title="Link to this definition">¶</a></dt>
 <dd><p>Return the model width.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns<span class="colon">:</span></dt>
@@ -469,7 +469,7 @@
 
 <dl class="py method">
 <dt class="sig sig-object py" id="FastSurferCNN.inference.Inference.get_modelname">
-<span class="sig-name descname"><span class="pre">get_modelname</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/deep-mi/FastSurfer/blob/stable//FastSurferCNN/inference.py#:~:text=get_modelname"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#FastSurferCNN.inference.Inference.get_modelname" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">get_modelname</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/deep-mi/FastSurfer/blob/stable//FastSurferCNN/inference.py#:~:text=get_modelname"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#FastSurferCNN.inference.Inference.get_modelname" title="Link to this definition">¶</a></dt>
 <dd><p>Return the model name.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns<span class="colon">:</span></dt>
@@ -483,7 +483,7 @@
 
 <dl class="py method">
 <dt class="sig sig-object py" id="FastSurferCNN.inference.Inference.get_num_classes">
-<span class="sig-name descname"><span class="pre">get_num_classes</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/deep-mi/FastSurfer/blob/stable//FastSurferCNN/inference.py#:~:text=get_num_classes"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#FastSurferCNN.inference.Inference.get_num_classes" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">get_num_classes</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/deep-mi/FastSurfer/blob/stable//FastSurferCNN/inference.py#:~:text=get_num_classes"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#FastSurferCNN.inference.Inference.get_num_classes" title="Link to this definition">¶</a></dt>
 <dd><p>Return the number of classes.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns<span class="colon">:</span></dt>
@@ -497,7 +497,7 @@
 
 <dl class="py method">
 <dt class="sig sig-object py" id="FastSurferCNN.inference.Inference.get_plane">
-<span class="sig-name descname"><span class="pre">get_plane</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/deep-mi/FastSurfer/blob/stable//FastSurferCNN/inference.py#:~:text=get_plane"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#FastSurferCNN.inference.Inference.get_plane" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">get_plane</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/deep-mi/FastSurfer/blob/stable//FastSurferCNN/inference.py#:~:text=get_plane"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#FastSurferCNN.inference.Inference.get_plane" title="Link to this definition">¶</a></dt>
 <dd><p>Return the plane.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns<span class="colon">:</span></dt>
@@ -511,7 +511,7 @@
 
 <dl class="py method">
 <dt class="sig sig-object py" id="FastSurferCNN.inference.Inference.load_checkpoint">
-<span class="sig-name descname"><span class="pre">load_checkpoint</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ckpt</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/deep-mi/FastSurfer/blob/stable//FastSurferCNN/inference.py#:~:text=load_checkpoint"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#FastSurferCNN.inference.Inference.load_checkpoint" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">load_checkpoint</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ckpt</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/deep-mi/FastSurfer/blob/stable//FastSurferCNN/inference.py#:~:text=load_checkpoint"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#FastSurferCNN.inference.Inference.load_checkpoint" title="Link to this definition">¶</a></dt>
 <dd><p>Load the checkpoint and set device and model.</p>
 <dl class="field-list">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -525,7 +525,7 @@
 
 <dl class="py method">
 <dt class="sig sig-object py" id="FastSurferCNN.inference.Inference.run">
-<span class="sig-name descname"><span class="pre">run</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">init_pred</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">img_filename</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">orig_data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">orig_zoom</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">out</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">out_res</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">batch_size</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/deep-mi/FastSurfer/blob/stable//FastSurferCNN/inference.py#:~:text=run"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#FastSurferCNN.inference.Inference.run" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">run</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">init_pred</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">img_filename</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">orig_data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">orig_zoom</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">out</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">out_res</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">batch_size</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/deep-mi/FastSurfer/blob/stable//FastSurferCNN/inference.py#:~:text=run"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#FastSurferCNN.inference.Inference.run" title="Link to this definition">¶</a></dt>
 <dd><p>Run the loaded model on the data (T1) from orig_data and img_filename (for messages only)  with scale factors orig_zoom.</p>
 <dl class="field-list">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -557,7 +557,7 @@
 
 <dl class="py method">
 <dt class="sig sig-object py" id="FastSurferCNN.inference.Inference.set_cfg">
-<span class="sig-name descname"><span class="pre">set_cfg</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cfg</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/deep-mi/FastSurfer/blob/stable//FastSurferCNN/inference.py#:~:text=set_cfg"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#FastSurferCNN.inference.Inference.set_cfg" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">set_cfg</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cfg</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/deep-mi/FastSurfer/blob/stable//FastSurferCNN/inference.py#:~:text=set_cfg"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#FastSurferCNN.inference.Inference.set_cfg" title="Link to this definition">¶</a></dt>
 <dd><p>[MISSING].</p>
 <dl class="field-list">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -571,7 +571,7 @@
 
 <dl class="py method">
 <dt class="sig sig-object py" id="FastSurferCNN.inference.Inference.setup_model">
-<span class="sig-name descname"><span class="pre">setup_model</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cfg</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">device</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/deep-mi/FastSurfer/blob/stable//FastSurferCNN/inference.py#:~:text=setup_model"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#FastSurferCNN.inference.Inference.setup_model" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">setup_model</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cfg</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">device</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/deep-mi/FastSurfer/blob/stable//FastSurferCNN/inference.py#:~:text=setup_model"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#FastSurferCNN.inference.Inference.setup_model" title="Link to this definition">¶</a></dt>
 <dd><p>Set up the model.</p>
 <dl class="field-list">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -587,7 +587,7 @@
 
 <dl class="py method">
 <dt class="sig sig-object py" id="FastSurferCNN.inference.Inference.to">
-<span class="sig-name descname"><span class="pre">to</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">device</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/deep-mi/FastSurfer/blob/stable//FastSurferCNN/inference.py#:~:text=to"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#FastSurferCNN.inference.Inference.to" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">to</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">device</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/deep-mi/FastSurfer/blob/stable//FastSurferCNN/inference.py#:~:text=to"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#FastSurferCNN.inference.Inference.to" title="Link to this definition">¶</a></dt>
 <dd><p>Move and/or cast the parameters and buffers.</p>
 <dl class="field-list">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -693,9 +693,9 @@
       
     </aside>
   </div>
-</div><script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js?v=b3ba4146"></script>
-    <script src="../../_static/doctools.js?v=888ff710"></script>
-    <script src="../../_static/sphinx_highlight.js?v=4825356b"></script>
+</div><script src="../../_static/documentation_options.js?v=5929fcd5"></script>
+    <script src="../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../../_static/scripts/furo.js?v=32e29ea5"></script>
     <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
     <script src="../../_static/copybutton.js?v=f281be69"></script>

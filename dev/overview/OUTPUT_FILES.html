@@ -1,11 +1,11 @@
 <!doctype html>
-<html class="no-js" lang="en" data-content_root="">
+<html class="no-js" lang="en" data-content_root="../">
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
     <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
 <link rel="index" title="Index" href="../genindex.html" /><link rel="search" title="Search" href="../search.html" /><link rel="next" title="Installation" href="INSTALL.html" /><link rel="prev" title="Examples" href="EXAMPLES.html" />
 
-    <!-- Generated with Sphinx 7.1.2 and Furo 2024.01.29 -->
+    <!-- Generated with Sphinx 7.3.5 and Furo 2024.01.29 -->
         <title>Output files - FastSurfer</title>
       <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=a746c00c" />
     <link rel="stylesheet" type="text/css" href="../_static/styles/furo.css?v=135e06be" />
@@ -307,9 +307,9 @@
         </div>
         <article role="main">
           <section id="output-files">
-<h1>Output files<a class="headerlink" href="#output-files" title="Permalink to this heading">#</a></h1>
+<h1>Output files<a class="headerlink" href="#output-files" title="Link to this heading">¶</a></h1>
 <section id="segmentation-module">
-<h2>Segmentation module<a class="headerlink" href="#segmentation-module" title="Permalink to this heading">#</a></h2>
+<h2>Segmentation module<a class="headerlink" href="#segmentation-module" title="Link to this heading">¶</a></h2>
 <p>The segmentation module outputs the files shown in the table below. The two primary output files are the <code class="docutils literal notranslate"><span class="pre">aparc.DKTatlas+aseg.deep.mgz</span></code> file, which contains the FastSurfer segmentation of cortical and subcortical structures based on the DKT atlas, and the <code class="docutils literal notranslate"><span class="pre">aseg+DKT.stats</span></code> file, which contains summary statistics for these structures. Note, that the surface model (downstream) corrects these segmentations along the cortex with the created surfaces. So if the surface model is used, it is recommended to use the updated segmentations and stats (see below).</p>
 <div class="table-wrapper colwidths-auto docutils container">
 <table class="docutils align-default">
@@ -366,7 +366,7 @@
 </div>
 </section>
 <section id="cerebnet-module">
-<h2>Cerebnet module<a class="headerlink" href="#cerebnet-module" title="Permalink to this heading">#</a></h2>
+<h2>Cerebnet module<a class="headerlink" href="#cerebnet-module" title="Link to this heading">¶</a></h2>
 <p>The cerebellum module outputs the files in the table shown below. Unless switched off by the <code class="docutils literal notranslate"><span class="pre">--no_cereb</span></code> argument, this module is automatically run whenever the segmentation module is run. It adds two files, an image with the sub-segmentation of the cerebellum and a text file with summary statistics.</p>
 <div class="table-wrapper colwidths-auto docutils container">
 <table class="docutils align-default">
@@ -393,7 +393,7 @@
 </div>
 </section>
 <section id="surface-module">
-<h2>Surface module<a class="headerlink" href="#surface-module" title="Permalink to this heading">#</a></h2>
+<h2>Surface module<a class="headerlink" href="#surface-module" title="Link to this heading">¶</a></h2>
 <p>The surface module is run unless switched off by the <code class="docutils literal notranslate"><span class="pre">--seg_only</span></code> argument. It outputs a large number of files, which generally correspond to the FreeSurfer nomenclature and definition. A selection of important output files is shown in the table below, for the other files, we refer to the <a class="reference external" href="https://surfer.nmr.mgh.harvard.edu/fswiki">FreeSurfer documentation</a>. In general, the “mri” directory contains images, including segmentations, the “surf” folder contains surface files (geometries and vertex-wise overlay data), the “label” folder contains cortical parcellation labels, and the “stats” folder contains tabular summary statistics. Many files are available for the left (“lh”) and right (“rh”) hemisphere of the brain. Symbolic links are created to map FastSurfer files to their FreeSurfer equivalents, which may need to be present for further processing (e.g., with FreeSurfer downstream modules).</p>
 <p>After running this module, some of the initial segmentations and corresponding volume estimates are fine-tuned (e.g., surface-based partial volume correction, addition of corpus callosum labels). Specifically, this concerns the <code class="docutils literal notranslate"><span class="pre">aseg.mgz</span> </code>, <code class="docutils literal notranslate"><span class="pre">aparc.DKTatlas+aseg.mapped.mgz</span></code>, <code class="docutils literal notranslate"><span class="pre">aparc.DKTatlas+aseg.deep.withCC.mgz</span></code>, which were originally created by the segmentation module or have earlier versions resulting from that module.</p>
 <p>The primary output files are pial, white, and inflated surface files, the thickness overlay files, and the cortical parcellation (annotation) files. The preferred way of assessing this output is the <a class="reference external" href="https://surfer.nmr.mgh.harvard.edu/fswiki/FreeviewGuide">FreeView</a> software. Summary statistics for volume and thickness estimates per anatomical structure are reported in the stats files, in particular the <code class="docutils literal notranslate"><span class="pre">aseg.stats</span></code>, and the left and right <code class="docutils literal notranslate"><span class="pre">aparc.DKTatlas.mapped.stats</span></code> files.</p>
@@ -594,9 +594,9 @@
       
     </aside>
   </div>
-</div><script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js?v=b3ba4146"></script>
-    <script src="../_static/doctools.js?v=888ff710"></script>
-    <script src="../_static/sphinx_highlight.js?v=4825356b"></script>
+</div><script src="../_static/documentation_options.js?v=5929fcd5"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../_static/scripts/furo.js?v=32e29ea5"></script>
     <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
     <script src="../_static/copybutton.js?v=f281be69"></script>

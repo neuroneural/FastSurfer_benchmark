@@ -1,11 +1,11 @@
 <!doctype html>
-<html class="no-js" lang="en" data-content_root="">
+<html class="no-js" lang="en" data-content_root="../../">
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
     <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
 <link rel="index" title="Index" href="../../genindex.html" /><link rel="search" title="Search" href="../../search.html" /><link rel="next" title="recon_surf.fs_balabels" href="recon_surf.fs_balabels.html" /><link rel="prev" title="recon_surf.align_seg" href="recon_surf.align_seg.html" />
 
-    <!-- Generated with Sphinx 7.1.2 and Furo 2024.01.29 -->
+    <!-- Generated with Sphinx 7.3.5 and Furo 2024.01.29 -->
         <title>recon_surf.create_annotation - FastSurfer</title>
       <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=a746c00c" />
     <link rel="stylesheet" type="text/css" href="../../_static/styles/furo.css?v=135e06be" />
@@ -307,10 +307,10 @@
         </div>
         <article role="main">
           <section id="module-recon_surf.create_annotation">
-<span id="recon-surf-create-annotation"></span><h1>recon_surf.create_annotation<a class="headerlink" href="#module-recon_surf.create_annotation" title="Permalink to this heading">#</a></h1>
+<span id="recon-surf-create-annotation"></span><h1>recon_surf.create_annotation<a class="headerlink" href="#module-recon_surf.create_annotation" title="Link to this heading">¶</a></h1>
 <dl class="py function">
 <dt class="sig sig-object py" id="recon_surf.create_annotation.build_annot">
-<span class="sig-prename descclassname"><span class="pre">recon_surf.create_annotation.</span></span><span class="sig-name descname"><span class="pre">build_annot</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">all_labels</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">all_values</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">col_ids</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">trg_white</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cortex_label_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/deep-mi/FastSurfer/blob/stable//recon_surf/create_annotation.py#:~:text=build_annot"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#recon_surf.create_annotation.build_annot" title="Permalink to this definition">#</a></dt>
+<span class="sig-prename descclassname"><span class="pre">recon_surf.create_annotation.</span></span><span class="sig-name descname"><span class="pre">build_annot</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">all_labels</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">all_values</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">col_ids</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">trg_white</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cortex_label_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/deep-mi/FastSurfer/blob/stable//recon_surf/create_annotation.py#:~:text=build_annot"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#recon_surf.create_annotation.build_annot" title="Link to this definition">¶</a></dt>
 <dd><p>Create an annotation from multiple labels.</p>
 <p>Here we also consider the label values and overwrite existing labels
 if values of current are larger (or equal, so the order of the labels matters).
@@ -343,7 +343,7 @@ No output is written.</p>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="recon_surf.create_annotation.create_annotation">
-<span class="sig-prename descclassname"><span class="pre">recon_surf.create_annotation.</span></span><span class="sig-name descname"><span class="pre">create_annotation</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">options</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">verbose</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/deep-mi/FastSurfer/blob/stable//recon_surf/create_annotation.py#:~:text=create_annotation"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#recon_surf.create_annotation.create_annotation" title="Permalink to this definition">#</a></dt>
+<span class="sig-prename descclassname"><span class="pre">recon_surf.create_annotation.</span></span><span class="sig-name descname"><span class="pre">create_annotation</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">options</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">verbose</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/deep-mi/FastSurfer/blob/stable//recon_surf/create_annotation.py#:~:text=create_annotation"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#recon_surf.create_annotation.create_annotation" title="Link to this definition">¶</a></dt>
 <dd><p>Map (if required), build  and write annotation.</p>
 <p>(Main function)</p>
 <dl class="field-list">
@@ -369,7 +369,7 @@ trgsphere: optional, when mapping: path to trg sphere.reg.</p>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="recon_surf.create_annotation.map_multiple_labels">
-<span class="sig-prename descclassname"><span class="pre">recon_surf.create_annotation.</span></span><span class="sig-name descname"><span class="pre">map_multiple_labels</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">hemi</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">src_dir</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">src_labels</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">src_sphere_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">trg_sphere_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">trg_white_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">trg_sid</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">out_dir</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stop_missing</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/deep-mi/FastSurfer/blob/stable//recon_surf/create_annotation.py#:~:text=map_multiple_labels"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#recon_surf.create_annotation.map_multiple_labels" title="Permalink to this definition">#</a></dt>
+<span class="sig-prename descclassname"><span class="pre">recon_surf.create_annotation.</span></span><span class="sig-name descname"><span class="pre">map_multiple_labels</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">hemi</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">src_dir</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">src_labels</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">src_sphere_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">trg_sphere_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">trg_white_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">trg_sid</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">out_dir</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stop_missing</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/deep-mi/FastSurfer/blob/stable//recon_surf/create_annotation.py#:~:text=map_multiple_labels"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#recon_surf.create_annotation.map_multiple_labels" title="Link to this definition">¶</a></dt>
 <dd><p>Map a list of labels from one surface (e.g. fsavaerage sphere.reg) to another.</p>
 <p>Labels are just names without hemisphere or path,
 which are passed via hemi, src_dir, out_dir).</p>
@@ -416,7 +416,7 @@ with a warning. Defaults to True.</p>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="recon_surf.create_annotation.options_parse">
-<span class="sig-prename descclassname"><span class="pre">recon_surf.create_annotation.</span></span><span class="sig-name descname"><span class="pre">options_parse</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/deep-mi/FastSurfer/blob/stable//recon_surf/create_annotation.py#:~:text=options_parse"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#recon_surf.create_annotation.options_parse" title="Permalink to this definition">#</a></dt>
+<span class="sig-prename descclassname"><span class="pre">recon_surf.create_annotation.</span></span><span class="sig-name descname"><span class="pre">options_parse</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/deep-mi/FastSurfer/blob/stable//recon_surf/create_annotation.py#:~:text=options_parse"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#recon_surf.create_annotation.options_parse" title="Link to this definition">¶</a></dt>
 <dd><p>Command line option parser.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns<span class="colon">:</span></dt>
@@ -430,7 +430,7 @@ with a warning. Defaults to True.</p>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="recon_surf.create_annotation.read_colortable">
-<span class="sig-prename descclassname"><span class="pre">recon_surf.create_annotation.</span></span><span class="sig-name descname"><span class="pre">read_colortable</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">colortab_name</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/deep-mi/FastSurfer/blob/stable//recon_surf/create_annotation.py#:~:text=read_colortable"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#recon_surf.create_annotation.read_colortable" title="Permalink to this definition">#</a></dt>
+<span class="sig-prename descclassname"><span class="pre">recon_surf.create_annotation.</span></span><span class="sig-name descname"><span class="pre">read_colortable</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">colortab_name</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/deep-mi/FastSurfer/blob/stable//recon_surf/create_annotation.py#:~:text=read_colortable"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#recon_surf.create_annotation.read_colortable" title="Link to this definition">¶</a></dt>
 <dd><p>Read the colortable of given name.</p>
 <dl class="field-list">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -454,7 +454,7 @@ with a warning. Defaults to True.</p>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="recon_surf.create_annotation.read_multiple_labels">
-<span class="sig-prename descclassname"><span class="pre">recon_surf.create_annotation.</span></span><span class="sig-name descname"><span class="pre">read_multiple_labels</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">hemi</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">input_dir</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">label_names</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/deep-mi/FastSurfer/blob/stable//recon_surf/create_annotation.py#:~:text=read_multiple_labels"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#recon_surf.create_annotation.read_multiple_labels" title="Permalink to this definition">#</a></dt>
+<span class="sig-prename descclassname"><span class="pre">recon_surf.create_annotation.</span></span><span class="sig-name descname"><span class="pre">read_multiple_labels</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">hemi</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">input_dir</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">label_names</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/deep-mi/FastSurfer/blob/stable//recon_surf/create_annotation.py#:~:text=read_multiple_labels"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#recon_surf.create_annotation.read_multiple_labels" title="Link to this definition">¶</a></dt>
 <dd><p>Read multiple label files from input_dir.</p>
 <dl class="field-list">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -480,7 +480,7 @@ with a warning. Defaults to True.</p>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="recon_surf.create_annotation.write_annot">
-<span class="sig-prename descclassname"><span class="pre">recon_surf.create_annotation.</span></span><span class="sig-name descname"><span class="pre">write_annot</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">annot_ids</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">label_names</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">colortab_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">out_annot</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">append</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/deep-mi/FastSurfer/blob/stable//recon_surf/create_annotation.py#:~:text=write_annot"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#recon_surf.create_annotation.write_annot" title="Permalink to this definition">#</a></dt>
+<span class="sig-prename descclassname"><span class="pre">recon_surf.create_annotation.</span></span><span class="sig-name descname"><span class="pre">write_annot</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">annot_ids</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">label_names</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">colortab_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">out_annot</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">append</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/deep-mi/FastSurfer/blob/stable//recon_surf/create_annotation.py#:~:text=write_annot"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#recon_surf.create_annotation.write_annot" title="Link to this definition">¶</a></dt>
 <dd><p>Combine the colortable with the annotations ids to write an annotation file.</p>
 <p>The annotation file contains colortable information
 Care needs to be taken that the colortable file has the same number
@@ -585,9 +585,9 @@ and order of labels as specified in the label_names list.</p>
       
     </aside>
   </div>
-</div><script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js?v=b3ba4146"></script>
-    <script src="../../_static/doctools.js?v=888ff710"></script>
-    <script src="../../_static/sphinx_highlight.js?v=4825356b"></script>
+</div><script src="../../_static/documentation_options.js?v=5929fcd5"></script>
+    <script src="../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../../_static/scripts/furo.js?v=32e29ea5"></script>
     <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
     <script src="../../_static/copybutton.js?v=f281be69"></script>
