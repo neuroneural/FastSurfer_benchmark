@@ -381,16 +381,16 @@
 <span id="fastsurfercnn-reduce-to-aseg"></span><h1>FastSurferCNN.reduce_to_aseg<a class="headerlink" href="#module-FastSurferCNN.reduce_to_aseg" title="Link to this heading">¶</a></h1>
 <dl class="py function">
 <dt class="sig sig-object py" id="FastSurferCNN.reduce_to_aseg.create_mask">
-<span class="sig-prename descclassname"><span class="pre">FastSurferCNN.reduce_to_aseg.</span></span><span class="sig-name descname"><span class="pre">create_mask</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">aseg_data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dnum</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">enum</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/deep-mi/FastSurfer/blob/dev/FastSurferCNN/reduce_to_aseg.py#L115-L167"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#FastSurferCNN.reduce_to_aseg.create_mask" title="Link to this definition">¶</a></dt>
+<span class="sig-prename descclassname"><span class="pre">FastSurferCNN.reduce_to_aseg.</span></span><span class="sig-name descname"><span class="pre">create_mask</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">aseg_data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dnum</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">enum</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/deep-mi/FastSurfer/blob/dev/FastSurferCNN/reduce_to_aseg.py#L116-L168"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#FastSurferCNN.reduce_to_aseg.create_mask" title="Link to this definition">¶</a></dt>
 <dd><p>Create dilated mask.</p>
-<dl class="field-list simple">
+<dl class="field-list">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>aseg_data</strong><span class="classifier">-</span></dt><dd><p>[MISSING].</p>
+<dd class="field-odd"><dl>
+<dt><strong>aseg_data</strong><span class="classifier"><code class="xref py py-obj docutils literal notranslate"><span class="pre">npt.NDArray</span></code>[<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.12)"><code class="docutils literal notranslate"><span class="pre">int</span></code></a>]</span></dt><dd><p>The input segmentation data.</p>
 </dd>
-<dt><strong>dnum</strong><span class="classifier">-</span></dt><dd><p>[MISSING].</p>
+<dt><strong>dnum</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.12)"><code class="docutils literal notranslate"><span class="pre">int</span></code></a></span></dt><dd><p>The number of iterations for the dilation operation.</p>
 </dd>
-<dt><strong>enum</strong><span class="classifier">-</span></dt><dd><p>[MISSING].</p>
+<dt><strong>enum</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.12)"><code class="docutils literal notranslate"><span class="pre">int</span></code></a></span></dt><dd><p>The number of iterations for the erosion operation.</p>
 </dd>
 </dl>
 </dd>
@@ -404,18 +404,18 @@
 
 <dl class="py function">
 <dt class="sig sig-object py" id="FastSurferCNN.reduce_to_aseg.flip_wm_islands">
-<span class="sig-prename descclassname"><span class="pre">FastSurferCNN.reduce_to_aseg.</span></span><span class="sig-name descname"><span class="pre">flip_wm_islands</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">aseg_data</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/deep-mi/FastSurfer/blob/dev/FastSurferCNN/reduce_to_aseg.py#L170-L225"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#FastSurferCNN.reduce_to_aseg.flip_wm_islands" title="Link to this definition">¶</a></dt>
-<dd><p>[MISSING].</p>
-<dl class="field-list simple">
+<span class="sig-prename descclassname"><span class="pre">FastSurferCNN.reduce_to_aseg.</span></span><span class="sig-name descname"><span class="pre">flip_wm_islands</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">aseg_data</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/deep-mi/FastSurfer/blob/dev/FastSurferCNN/reduce_to_aseg.py#L171-L226"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#FastSurferCNN.reduce_to_aseg.flip_wm_islands" title="Link to this definition">¶</a></dt>
+<dd><p>Flip labels of disconnected white matter islands to the other hemisphere.</p>
+<dl class="field-list">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>aseg_data</strong><span class="classifier">-</span></dt><dd><p>[MISSING].</p>
+<dd class="field-odd"><dl>
+<dt><strong>aseg_data</strong><span class="classifier"><a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.26)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">numpy.ndarray</span></code></a></span></dt><dd><p>The input segmentation data.</p>
 </dd>
 </dl>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><dl class="simple">
-<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">flip_data</span></code></dt><dd><p>[MISSING].</p>
+<dd class="field-even"><dl>
+<dt><strong>flip_data</strong><span class="classifier"><a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.26)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">numpy.ndarray</span></code></a></span></dt><dd><p>The segmentation data with flipped WM labels.</p>
 </dd>
 </dl>
 </dd>
@@ -438,18 +438,19 @@
 
 <dl class="py function">
 <dt class="sig sig-object py" id="FastSurferCNN.reduce_to_aseg.reduce_to_aseg">
-<span class="sig-prename descclassname"><span class="pre">FastSurferCNN.reduce_to_aseg.</span></span><span class="sig-name descname"><span class="pre">reduce_to_aseg</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data_inseg</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/deep-mi/FastSurfer/blob/dev/FastSurferCNN/reduce_to_aseg.py#L93-L112"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#FastSurferCNN.reduce_to_aseg.reduce_to_aseg" title="Link to this definition">¶</a></dt>
-<dd><p>[MISSING].</p>
-<dl class="field-list simple">
+<span class="sig-prename descclassname"><span class="pre">FastSurferCNN.reduce_to_aseg.</span></span><span class="sig-name descname"><span class="pre">reduce_to_aseg</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data_inseg</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/deep-mi/FastSurfer/blob/dev/FastSurferCNN/reduce_to_aseg.py#L93-L113"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#FastSurferCNN.reduce_to_aseg.reduce_to_aseg" title="Link to this definition">¶</a></dt>
+<dd><p>Reduce the input segmentation to a simpler segmentation.</p>
+<dl class="field-list">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>data_inseg</strong><span class="classifier">-</span></dt><dd><p>[MISSING].</p>
+<dd class="field-odd"><dl>
+<dt><strong>data_inseg</strong><span class="classifier"><a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.26)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">np.ndarray</span></code></a>, <code class="xref py py-obj docutils literal notranslate"><span class="pre">torch.Tensor</span></code></span></dt><dd><p>The input segmentation. This should be a 3D array where the value at each position represents the segmentation
+label for that position.</p>
 </dd>
 </dl>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><dl class="simple">
-<dt>[<code class="xref py py-obj docutils literal notranslate"><span class="pre">MISSING</span></code>]</dt><dd><p>Returns reduced_aseg.</p>
+<dd class="field-even"><dl>
+<dt><strong>data_inseg</strong><span class="classifier"><a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.26)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">np.ndarray</span></code></a>, <code class="xref py py-obj docutils literal notranslate"><span class="pre">torch.Tensor</span></code></span></dt><dd><p>The reduced segmentation.</p>
 </dd>
 </dl>
 </dd>
