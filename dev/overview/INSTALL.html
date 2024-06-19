@@ -422,8 +422,8 @@
 sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>-y<span class="w"> </span>g++-11
 </pre></div>
 </div>
-<p>You also need to have bash-4.0 or higher (check with <code class="docutils literal notranslate"><span class="pre">bash</span> <span class="pre">--version</span></code>).</p>
-<p>You also need a working version of python3 (we recommend python 3.10 – we do not support other versions). These packages should be sufficient to install python dependencies and then run the FastSurfer neural network segmentation. If you want to run the full pipeline, you also need a <a class="reference external" href="https://surfer.nmr.mgh.harvard.edu/fswiki/rel7downloads">working installation of FreeSurfer</a> (including its dependencies).</p>
+<p>You also need to have bash-3.2 or higher (check with <code class="docutils literal notranslate"><span class="pre">bash</span> <span class="pre">--version</span></code>).</p>
+<p>You also need a working version of python3.10 (we do not support other versions). These packages should be sufficient to install python dependencies and then run the FastSurfer neural network segmentation. If you want to run the full pipeline, you also need a <a class="reference external" href="https://surfer.nmr.mgh.harvard.edu/fswiki/rel7downloads">working installation of FreeSurfer</a> (including its dependencies).</p>
 <p>If you are using pip, make sure pip is updated as older versions will fail.</p>
 </section>
 <section id="conda-for-python">
@@ -508,23 +508,22 @@ Start it and set Memory to 15 GB under Preferences -&gt; Resources (or the large
 </section>
 <section id="native">
 <h3>Native<a class="headerlink" href="#native" title="Link to this heading">¶</a></h3>
-<p>On modern Macs with the Apple Silicon M1 or M2 ARM-based chips, we recommend a native installation as it runs much faster than Docker in our tests. The experimental support for the built-in AI Accelerator is also only available on native installations. Native installation also supports older Intel chips.</p>
-<section id="git-and-bash">
-<h4>1. Git and Bash<a class="headerlink" href="#git-and-bash" title="Link to this heading">¶</a></h4>
-<p>If you do not have git and a recent bash (version &gt; 4.0 required!) installed, install them via the packet manager, e.g. brew.
-This installs brew and then bash:</p>
+<p>On modern Macs with the Apple Silicon M1 or M2 ARM-based chips, we recommend a native installation as it runs much faster than Docker in our tests. The experimental support for the built-in AI accelerator (MPS) is also only available on native installations. Native installation also supports older Intel chips.</p>
+<section id="dependency-packages">
+<h4>1. Dependency packages<a class="headerlink" href="#dependency-packages" title="Link to this heading">¶</a></h4>
+<p>If you do not have git, python3.10 or bash (at least 3.2) you can install these via the packet manager brew.
+This installs brew and then git and python3.10:</p>
 <div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>/bin/bash<span class="w"> </span>-c<span class="w"> </span><span class="s2">&quot;</span><span class="k">$(</span>curl<span class="w"> </span>-fsSL<span class="w"> </span>https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh<span class="k">)</span><span class="s2">&quot;</span>
-brew<span class="w"> </span>install<span class="w"> </span>bash
+brew<span class="w"> </span>install<span class="w"> </span>git<span class="w"> </span>python@3.10
 </pre></div>
 </div>
-<p>Make sure you use this bash and not the older one provided with MacOS!</p>
 </section>
 <section id="python">
 <h4>2. Python<a class="headerlink" href="#python" title="Link to this heading">¶</a></h4>
 <p>Create a python environment, activate it, and upgrade pip. Here we use pip, but you should also be able to use conda for python:</p>
-<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>python3<span class="w"> </span>-m<span class="w"> </span>venv<span class="w"> </span><span class="nv">$HOME</span>/python-envs/fastsurfer<span class="w"> </span>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>python3.10<span class="w"> </span>-m<span class="w"> </span>venv<span class="w"> </span><span class="nv">$HOME</span>/python-envs/fastsurfer<span class="w"> </span>
 <span class="nb">source</span><span class="w"> </span><span class="nv">$HOME</span>/python-envs/fastsurfer/bin/activate
-python3<span class="w"> </span>-m<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>--upgrade<span class="w"> </span>pip
+python3.10<span class="w"> </span>-m<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>--upgrade<span class="w"> </span>pip
 </pre></div>
 </div>
 </section>
@@ -537,7 +536,7 @@ python3<span class="w"> </span>-m<span class="w"> </span>pip<span class="w"> </s
 </pre></div>
 </div>
 <p>Install the FastSurfer requirements</p>
-<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>python3<span class="w"> </span>-m<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>-r<span class="w"> </span>requirements.mac.txt
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>python3.10<span class="w"> </span>-m<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>-r<span class="w"> </span>requirements.mac.txt
 </pre></div>
 </div>
 <p>If this step fails, you may need to edit <code class="docutils literal notranslate"><span class="pre">requirements.mac.txt</span></code> and adjust version number to what is available.
@@ -548,21 +547,20 @@ pip3<span class="w"> </span>install<span class="w"> </span>--no-binary<span clas
 </pre></div>
 </div>
 <p>You can also download all network checkpoint files (this should be done if you are installing for multiple users):</p>
-<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>python3<span class="w"> </span>FastSurferCNN/download_checkpoints.py<span class="w"> </span>--all
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>python3.10<span class="w"> </span>FastSurferCNN/download_checkpoints.py<span class="w"> </span>--all
 </pre></div>
 </div>
-<p>Once all dependencies are installed, run the FastSurfer segmentation only (!!) by calling <code class="docutils literal notranslate"><span class="pre">bash</span> <span class="pre">./run_fastsurfer.sh</span> <span class="pre">--seg_only</span> <span class="pre">....</span></code> with the appropriate command line flags, see the <a class="reference internal" href="../index.html"><span class="std std-ref">commandline documentation</span></a>.</p>
-<p>Note: You may always need to prepend the command with <code class="docutils literal notranslate"><span class="pre">bash</span></code> (i.e. <code class="docutils literal notranslate"><span class="pre">bash</span> <span class="pre">run_fastsurfer.sh</span> <span class="pre">&lt;...&gt;</span></code>) to ensure that bash 4.0 is used instead of the system default.</p>
-<p>To run the full pipeline, install and source also the supported FreeSurfer version according to their <a class="reference external" href="https://surfer.nmr.mgh.harvard.edu/fswiki/rel7downloads">Instructions</a>. There is a freesurfer email list, if you run into problems during this step.</p>
+<p>Once all dependencies are installed, you can run the FastSurfer segmentation only by calling <code class="docutils literal notranslate"><span class="pre">./run_fastsurfer.sh</span> <span class="pre">--seg_only</span> <span class="pre">....</span></code> with the appropriate command line flags, see the <a class="reference internal" href="../index.html"><span class="std std-ref">commandline documentation</span></a>.</p>
+<p>To run the full pipeline, install and source also the supported FreeSurfer version according to their <a class="reference external" href="https://surfer.nmr.mgh.harvard.edu/fswiki/rel7downloads">Instructions</a>. There is a freesurfer email list, if you run into problems during this step. Note, that currently FreeSurfer for MacOS supports no ARM, but only Intel, so on modern M-chips it might be slow due to the emulation.</p>
 </section>
 <section id="apple-ai-accelerator-support">
 <h4>4. Apple AI Accelerator support<a class="headerlink" href="#apple-ai-accelerator-support" title="Link to this heading">¶</a></h4>
-<p>You can also try the experimental support for the Apple Silicon AI Accelerator by setting <code class="docutils literal notranslate"><span class="pre">PYTORCH_ENABLE_MPS_FALLBACK</span></code> and passing <code class="docutils literal notranslate"><span class="pre">--device</span> <span class="pre">mps</span></code>:</p>
+<p>You can also try the experimental support for the Apple Silicon AI Accelerator by setting <code class="docutils literal notranslate"><span class="pre">PYTORCH_ENABLE_MPS_FALLBACK</span></code> and passing <code class="docutils literal notranslate"><span class="pre">--device</span> <span class="pre">mps</span></code> for the segmentation module to make use of the fast GPU:</p>
 <div class="highlight-sh notranslate"><div class="highlight"><pre><span></span><span class="nb">export</span><span class="w"> </span><span class="nv">PYTORCH_ENABLE_MPS_FALLBACK</span><span class="o">=</span><span class="m">1</span>
 ./run_fastsurfer.sh<span class="w"> </span>--seg_only<span class="w"> </span>--device<span class="w"> </span>mps<span class="w"> </span>....
 </pre></div>
 </div>
-<p>This will be at least twice as fast as <code class="docutils literal notranslate"><span class="pre">--device</span> <span class="pre">cpu</span></code>. The fallback environment variable is necessary as one function is not yet implemented for the GPU and will fall back to CPU.</p>
+<p>This will be at least twice as fast as <code class="docutils literal notranslate"><span class="pre">--device</span> <span class="pre">cpu</span></code>. The fallback environment variable is necessary as <code class="docutils literal notranslate"><span class="pre">aten::max_unpool2d</span></code> is not yet implemented for MPS and will fall back to CPU.</p>
 </section>
 </section>
 </section>
@@ -705,7 +703,7 @@ pip3<span class="w"> </span>install<span class="w"> </span>--no-binary<span clas
 <li><a class="reference internal" href="#macos">MacOS</a><ul>
 <li><a class="reference internal" href="#docker-currently-only-supported-for-intel-cpus">Docker (currently only supported for Intel CPUs)</a></li>
 <li><a class="reference internal" href="#native">Native</a><ul>
-<li><a class="reference internal" href="#git-and-bash">1. Git and Bash</a></li>
+<li><a class="reference internal" href="#dependency-packages">1. Dependency packages</a></li>
 <li><a class="reference internal" href="#python">2. Python</a></li>
 <li><a class="reference internal" href="#fastsurfer-and-requirements">3. FastSurfer and Requirements</a></li>
 <li><a class="reference internal" href="#apple-ai-accelerator-support">4. Apple AI Accelerator support</a></li>
